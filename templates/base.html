@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title> {% block title %} {% endblock %} - Meu Blog </title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Meu Blog de Desenvolvimento Web</h1>
+        <nav>
+            <section class="content">
+            {% block content %}
+            {% endblock %}
+            </section>
+        </nav>
+    </body>
+</html>
