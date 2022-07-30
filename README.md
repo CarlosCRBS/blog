@@ -15,3 +15,6 @@
    14  history > README.txt 
     # Vê a config do app
         heroku config --app blog-curso-ocean
+
+    $git push heroku main
+    
