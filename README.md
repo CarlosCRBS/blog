@@ -17,4 +17,4 @@
         heroku config --app blog-curso-ocean
 
     $git push heroku main
-    
+    $heroku logs --tail

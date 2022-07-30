@@ -56,7 +56,8 @@ db.create_all()
 @app.route("/")
 def index():
     #Busca no banco os posts
-    posts = Post.query.all()
+    #posts = Post.query.all()
+    posts = Post.query.order_by(-Posts.created).all()
     return render_template("index.html", posts=posts)
 
 @app.route("/register", methods=["GET","POST"])
